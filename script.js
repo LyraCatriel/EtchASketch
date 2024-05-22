@@ -16,4 +16,11 @@ function mouseOver() {
   this.style.backgroundColor = "red";
 }
 
-makeRows(16, 16);
+function resizeRows() {
+  document.getElementById("container").innerHTML = "";
+  rows = prompt("Pick an amount of squares per side ");
+  cols = rows
+  makeRows(rows, cols);
+}
+
+// makeRows(16, 16);
